@@ -6,8 +6,8 @@
             // idPage titre
             'index' => array( 'Accueil' ),
             'cv' => array( 'Formation' ),
-            'projets' => array('Expériences')
-            'hobbiesAndSkills' => array('Compétences')
+            'projets' => array('Expériences'),
+            'hobbiesAndSkills' => array('Compétences'),
             'infos_techniques' => array('Informations')
         );
         

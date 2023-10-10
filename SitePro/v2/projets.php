@@ -16,7 +16,10 @@
     <div class="container p-0 ">
         <div class="row align-self-center">
             <div class="col-3 ml-0">
-                <?php require_once('template_menu.php')?>
+                <?php 
+                    require_once('template_menu.php');
+                    renderMenuToHTML('projets');
+                ?>
             </div>
 
             <div class="col-9 text-justify">
