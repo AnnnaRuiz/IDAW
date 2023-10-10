@@ -18,7 +18,7 @@
             <div class="col-10 align-self-center text-center" >
                 <div class="row-4 "><h2>Etudiante en école d’ingénieur (M1)</h1></div>
                 <div class="row-4 font-italic"><h3>En recherche d’un stage en développement Web</h2></div>
-                <div class="row-4 font-italic"><h4>16 semaines à compter du 15 Mai 2023</h3></div>
+                <div class="row-4 font-italic"><h4>16 semaines à compter du 10 Avril 2024</h3></div>
             </div>
         </div>
     </div>  

@@ -1,0 +1,31 @@
+#currentpage{
+    background-color: grey;
+}
+
+nav ul {
+    list-style-type : none;
+    }
+
+nav a {
+    text-decoration : none; 
+    border: 1px solid #1A6FB0;
+    background-color: #267BBC;
+    padding: 5px;
+    text-align:center; 
+    margin-top: 2px; 
+    margin-bottom: 2px; 
+    width: 150px;
+    display: block;
+    color: white;
+    }
+
+nav a:hover { 
+    background-color: white;
+    color: #1A6FB0;
+    }
+.title{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
