@@ -1,7 +1,7 @@
 
 
     <div class="row bg-dark text-white m-0 p-0" >
-        <div class=" col-12 text-center"></br><h2><i class="fas fa-handshake" style="color: #ffffff;"></i> Hard et soft skills </h2></br></div>
+        <div class=" col-12 text-center"></br><h2><i class="fas fa-handshake" style="color: #ffffff;"></i> Connaissances et compétences </h2></br></div>
     </div>
 
 

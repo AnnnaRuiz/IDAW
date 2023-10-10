@@ -15,22 +15,22 @@
 
         <div class="col-4 text-justify text-center">
             <div class="row-3 ">
-                <h2><br>IT skills</h2><br>
+                <h2><br>IT skills <i class="fas fa-laptop-code" style="color: #000000;"></i></h2><br>
             </div>
             <div class="row-9 ">
-                <p>Java </p>
-                <p>Python</p>
-                <p>C</p>
-                <p>HTML</p>
-                <p>CSS (Bootstrap)</p>
-                <p>PHP</p>
+                <p><i class="fab fa-java" style="color: #000000;"></i> Java </p>
+                <p><i class="fab fa-python" style="color: #000000;"></i> Python</p>
+                <p><i class="fas fa-copyright" style="color: #000000;"></i> C</p>
+                <p><i class="fab fa-html5" style="color: #000000;"></i> HTML</p>
+                <p><i class="fab fa-css3-alt" style="color: #000000;"></i> CSS (Bootstrap)</p>
+                <p><i class="fab fa-php" style="color: #000000;"></i> PHP</p>
                 <p>Pack office</p>
             </div>
         </div>   
         
         <div class="col-4 text-justify text-center">
             <div class="row-3">
-                <h2><br>Soft Skills</h2><br>
+                <h2><br>Soft Skills <i class="fas fa-user-alt" style="color: #000000;"></i></h2><br>
             </div>
             <div class="row-9">
                 <p>Conflicts management </p>
