@@ -26,7 +26,7 @@
         echo '</li>';
     }
 
-    echo '<a class="bg-light text-dark" href="index.php?page='.$pageId.'&lang=en">ENGLISH</a>
+    echo '<li><a class="bg-light text-dark" href="index.php?page='.$currentPageId.'&lang=en">ENGLISH</a></li>
         </ul>
         </nav>';
         

@@ -1,10 +1,10 @@
 
 <body>
-    <div class="container p-0">
-        <div class="row bg-dark text-white m-0 p-0" >
-            <div class=" col-12 text-center "></br><h2><i class="fas fa-graduation-cap" style="color: #ffffff;"></i> Ma formation</h2></br></div>
-        </div>
-    </div> 
+
+    <div class="row bg-dark text-white m-0 p-0" >
+        <div class=" col-12 text-center "></br><h2><i class="fas fa-graduation-cap" style="color: #ffffff;"></i> Ma formation</h2></br></div>
+    </div>
+
 
     <div class="container p-0 ">
         <div class="row align-self-center">

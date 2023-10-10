@@ -1,22 +1,21 @@
 
 
-    <div class="container p-0">
-        <div class="row text-white bg-dark m-0 p-0">
-            <div class="col-2 align-self-center text-center">
-                <div class="row-10">
-                    <img class="rounded-circle" style="height: 150px" src="photoProfil.png" alt="Photo de profil Anna Ruiz">
-                </div>
-                <div class="row-2 font-italic">
-                    <p>Anna RUIZ</p>
-                </div>
+    <div class="row text-white bg-dark m-0 p-0">
+        <div class="col-2 align-self-center text-center">
+            <div class="row-10">
+                <img class="rounded-circle" style="height: 150px" src="photoProfil.png" alt="Photo de profil Anna Ruiz">
             </div>
-            <div class="col-10 align-self-center text-center" >
-                <div class="row-4 "><h2>Engineering school student</h1></div>
-                <div class="row-4 font-italic"><h3>Looking for an internship in web development</h2></div>
-                <div class="row-4 font-italic"><h4>16 weeks starting on April 10th, 2024</h3></div>
+            <div class="row-2 font-italic">
+                <p>Anna RUIZ</p>
             </div>
         </div>
-    </div>  
+        <div class="col-10 align-self-center text-left" >
+            <div class="row-4 "><h2>Engineering school student</h1></div>
+            <div class="row-4 font-italic"><h3>Looking for an internship in web development</h2></div>
+            <div class="row-4 font-italic"><h4>16 weeks starting on April 10th, 2024</h3></div>
+        </div>
+    </div>
+
 
     <div class="container p-0 ">
         <div class="row align-self-center">

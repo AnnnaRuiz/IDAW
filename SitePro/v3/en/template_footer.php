@@ -1,4 +1,4 @@
-    <div class="container md-0">
+
         <div class="row bg-light">
             <div class="col-12 text-center">
                 <ul>
@@ -11,4 +11,3 @@
                 </ul>
             </div>
         </div>
-    </div> 
