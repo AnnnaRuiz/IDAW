@@ -7,12 +7,13 @@
             'index' => array( 'Accueil' ),
             'cv' => array( 'Formation' ),
             'projets' => array('Expériences'),
-            'hobbiesAndSkills' => array('Compétences'),
-            'infos_techniques' => array('Informations')
+            'hobbiesAndLanguages' => array('Langues et Hobbies'),
+            'skills' => array('Connaissances et compétences')
         );
         
     echo '<nav class="menu">
-        <ul>';
+             <ul>
+                <div class="row-2"></br><h4> Menu :</h4></div>';
 
     foreach($mymenu as $pageId => $pageParameters) {
         echo '<li>';
