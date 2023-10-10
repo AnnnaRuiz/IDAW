@@ -17,34 +17,28 @@
     </div>
 
 
-    <div class="container p-0 ">
-        <div class="row align-self-center">
-            <div class="col-3 ml-0">
-            <?php
-                    renderMenuToHTML($currentPageId);
-            ?>
+    <div class="row align-self-center m-4">
+        <div class="col-3 ml-0">
+        <?php
+                renderMenuToHTML($currentPageId);
+        ?>
 
-            </div>
-            <div class="col-9 text-justify">
-                </br>
-                <div class="row-4 bg-secondary text-white text-center"><h5> En naviguant sur ce site, vous pourrez en apprendre plus sur mon parcours et moi</h5></div>
-                <br />
-                <div class="row-2"><p>🎓 Student at IMT Nord Europe, an Engineering School resulting from the merger between Mines de Douai and Télécom Lille.</p></div>
-
-                <div class="row-2"><p>👩‍💻 Interested in programming as well as management and organization, I would like to contribute to the development of a company in these fields.</p></div>
-
-                <div class="row-2"><p>💡 Versatile, Curious and Rigorous, I love to work on new projects and I am motivated by the perspective of learning always more.</p></div>
-
-                <div class="row-2"><p>✈️ Travel is an ultimate goal in my life. I think traveling allows oneself to grow as a human being by learning new cultures, new languages and how to be organized.</p></div>
-                <br />
-            </div>
         </div>
-    </div>  
+        <div class="col-9 text-justify">
+            </br>
+            <div class="row-4 bg-secondary text-white text-center"><h5> By browsing this site, you can find out more about me and my background.</h5></div>
+            <br />
+            <div class="row-2"><p>🎓 Student at IMT Nord Europe, an Engineering School resulting from the merger between Mines de Douai and Télécom Lille.</p></div>
+
+            <div class="row-2"><p>👩‍💻 Interested in programming as well as management and organization, I would like to contribute to the development of a company in these fields.</p></div>
+
+            <div class="row-2"><p>💡 Versatile, Curious and Rigorous, I love to work on new projects and I am motivated by the perspective of learning always more.</p></div>
+
+            <div class="row-2"><p>✈️ Travel is an ultimate goal in my life. I think traveling allows oneself to grow as a human being by learning new cultures, new languages and how to be organized.</p></div>
+            <br />
+        </div>
+    </div>
+
      
 
 
-
-
-</body>
-
-</html>
