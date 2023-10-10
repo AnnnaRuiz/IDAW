@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<?php require_once('head.php')?>
-
 
 <body>
     <div class="container p-0">
@@ -16,14 +11,13 @@
         <div class="row align-self-center">
             <div class="col-3 ml-0">
                 <?php 
-                    require_once('template_menu.php');
                     renderMenuToHTML('skills');
                 ?>
             </div>
 
             <div class="col-4 text-justify text-center">
                 <div class="row-3 ">
-                    <h2><br>Langages infomatiques</h2><br>
+                    <h2><br>IT skills</h2><br>
                 </div>
                 <div class="row-9 ">
                     <p>Java </p>
@@ -32,6 +26,7 @@
                     <p>HTML</p>
                     <p>CSS (Bootstrap)</p>
                     <p>PHP</p>
+                    <p>Pack office</p>
                 </div>
             </div>   
             
@@ -40,18 +35,12 @@
                     <h2><br>Soft Skills</h2><br>
                 </div>
                 <div class="row-9">
-                    <p>Polyvalence </p>
-                    <p>Rigueur</p>
-                    <p>Curiosité</p>
-                    <p>Autonomie</p>
-                    <p>Persévérance</p>
+                    <p>Conflicts management </p>
+                    <p>Great communication</p>
+                    <p>Curiosity</p>
+                    <p>Adaptability</p>
+                    <p>Versatility</p>
                 </div>
             </div>
         </div>
     </div> 
-
-    <?php require_once('template_footer.php')?>
-
-</body>
-
-</html>

@@ -4,7 +4,7 @@
         // un tableau qui définit la structure du site
         $mymenu = array(
             // idPage titre
-            'index' => array( 'Accueil' ),
+            'accueil' => array( 'Accueil' ),
             'cv' => array( 'Formation' ),
             'projets' => array('Expériences'),
             'hobbiesAndLanguages' => array('Langues et Hobbies'),
@@ -13,20 +13,22 @@
         
     echo '<nav class="menu">
              <ul>
-                <div class="row-2"></br><h4> Menu :</h4></div>';
+                <br>';
 
     foreach($mymenu as $pageId => $pageParameters) {
         echo '<li>';
-        if($pageId == $currentPageId) {
-            echo '<a id="currentpage" href="'.$pageId.'.php">'.$pageParameters[0].'</a>';
+        if($pageId == $currentPageId ) {
+            echo '<a id="currentpage" href="index.php?page='.$pageId.'&lang=fr">'.$pageParameters[0].'</a>';
+        
         } else {
-            echo '<a href="'.$pageId.'.php">'.$pageParameters[0].'</a>';
+            echo '<a href="index.php?page='.$pageId.'&lang=fr">'.$pageParameters[0].'</a>';
         }
         echo '</li>';
     }
 
-    echo '</ul>
+    echo '<a class="bg-light text-dark" href="index.php?page='.$pageId.'&lang=en">ENGLISH</a>
+        </ul>
         </nav>';
         
     }
-?>
+
