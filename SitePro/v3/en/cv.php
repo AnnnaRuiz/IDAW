@@ -8,7 +8,7 @@
     <div class="row align-self-center m-4">
         <div class="col-3 ml-0">
             <?php 
-                renderMenuToHTML('cv');
+                renderMenuToHTML('cv',$lang);
             ?>
 
         </div>

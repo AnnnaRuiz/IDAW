@@ -9,7 +9,7 @@
     <div class="row align-self-center m-4">
         <div class="col-3 ml-0">
             <?php 
-                renderMenuToHTML('skills');
+                renderMenuToHTML('skills',$lang);
             ?>
         </div>
 
