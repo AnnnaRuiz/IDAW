@@ -27,14 +27,25 @@ try {
             <th> Id </th>
             <th> Name </th>
             <th> Email </th>
+            <th> actions </th>
         </tr>';
         
         foreach ($result as $row) {
             echo '<tr>';
+            $id=null;
             foreach ($row as $key => $value) {
                 echo '<td>' . $value . '</td>';
+                if( $key=='id'){
+                    $id=$value;
+                }
             }
+            echo '
+                <form action="delete.php" method="POST">
+                    <input type="hidden" name="id" value="'.$id.'">
+                    <td><input type="submit" value="Delete" /></td>
+                </form>';
             echo '</tr>';
+            
         }
         echo '</table>';
     } else {
