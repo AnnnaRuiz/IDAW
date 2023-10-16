@@ -1,6 +1,3 @@
-<!Doctype html>
-<html>
-
 <?php
 
 $modif=false;
@@ -12,6 +9,9 @@ if(isset($_POST['modif']) && isset($_POST['id']) && isset($_POST['name']) && iss
 }
 
 ?>
+
+<!Doctype html>
+<html>
 
 
 <?php
