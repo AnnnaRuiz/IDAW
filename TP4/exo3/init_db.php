@@ -24,3 +24,5 @@ try {
 // Fermer la connexion
 $pdo = null;
 ?>
+
+
