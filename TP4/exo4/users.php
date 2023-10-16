@@ -1,3 +1,19 @@
+<!Doctype html>
+<html>
+
+<?php
+
+$modif=false;
+if(isset($_POST['modif']) && isset($_POST['id']) && isset($_POST['name']) && isset($_POST['email'])){  
+    $modif = $_POST['modif'];
+    $identifiant=$_POST['id'];
+    $mail=$_POST['email'];
+    $nom=$_POST['name'];
+}
+
+?>
+
+
 <?php
 require_once('config.php');
 
@@ -27,7 +43,7 @@ try {
             <th> Id </th>
             <th> Name </th>
             <th> Email </th>
-            <th> actions </th>
+            <th> Actions </th>
         </tr>';
         
         foreach ($result as $row) {
@@ -38,7 +54,21 @@ try {
                 if( $key=='id'){
                     $id=$value;
                 }
+                if( $key=='name'){
+                    $name=$value;
+                }
+                if( $key=='email'){
+                    $email=$value;
+                }
             }
+            echo '
+                <form action="users.php" method="POST">
+                    <input type="hidden" name="name" value="'.$name.'">
+                    <input type="hidden" name="email" value="'.$email.'">
+                    <input type="hidden" name="id" value="'.$id.'">
+                    <input type="hidden" name="modif" value="true">
+                    <td><input type="submit" value="Modify" /></td>
+                </form>';
             echo '
                 <form action="delete.php" method="POST">
                     <input type="hidden" name="id" value="'.$id.'">
@@ -75,3 +105,25 @@ $pdo = null;
             </tr>
         </table>
 </form>
+<?php if ($modif==true) :?>
+    <form action="modify.php" method="POST">
+        <table>
+            <input type="hidden" name="id" value="<?php echo $identifiant?>">
+
+            <tr>
+                <th>Name :</th>
+                <td><input type="text" name="name" value="<?php echo $nom?>"></td>
+            </tr>
+            <tr>
+                <th>Email :</th>
+                <td><input type="text" name="email" value="<?php echo $mail?>"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Update" /></td>
+            </tr>
+        </table>
+</form>
+<?php endif;?>
+
+</html>
+

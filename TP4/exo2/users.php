@@ -1,3 +1,6 @@
+<!Doctype html>
+<html>
+
 <?php
 require_once('config.php');
 
@@ -28,7 +31,7 @@ try {
             <th> Name </th>
             <th> Email </th>
         </tr>';
-        
+
         foreach ($result as $row) {
             echo '<tr>';
             foreach ($row as $key => $value) {
@@ -48,3 +51,6 @@ try {
     $pdo = null;
 }
 ?>
+
+
+</html>
