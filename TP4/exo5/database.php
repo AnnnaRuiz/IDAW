@@ -33,8 +33,8 @@ function createUser($name, $email) {
     $request->bindParam(':name', $name, PDO::PARAM_STR);
     $request->bindParam(':email', $email, PDO::PARAM_STR);
     $request->execute();
-    $result = $request->fetchAll(PDO::FETCH_OBJ);
-    return $result;
+
+    return ['id' => $pdo->lastInsertId()];
 }
 function deleteUser($id) {
     global $pdo;
