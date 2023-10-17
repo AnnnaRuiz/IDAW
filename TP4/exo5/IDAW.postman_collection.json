@@ -41,13 +41,159 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "GET /users.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "essai@try.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8888/IDAW/TP4/exo5/users.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"IDAW",
+								"TP4",
+								"exo5",
+								"users.php"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 17 Oct 2023 09:18:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Unix) OpenSSL/1.0.2u PHP/8.2.0 mod_wsgi/3.5 Python/2.7.18 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.0"
+						},
+						{
+							"key": "Content-Length",
+							"value": "11"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"20\"\n}"
+				}
+			]
 		},
 		{
 			"name": "users.php",
 			"request": {
 				"method": "GET",
 				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/IDAW/TP4/exo5/users.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"IDAW",
+						"TP4",
+						"exo5",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users.php",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "14",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8888/IDAW/TP4/exo5/users.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"IDAW",
+						"TP4",
+						"exo5",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users.php",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "essai@try.com",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
 					"raw": "http://localhost:8888/IDAW/TP4/exo5/users.php",
 					"protocol": "http",

@@ -26,6 +26,12 @@ function updateUser($name, $email, $id) {
     $request->bindParam(':email', $email, PDO::PARAM_STR);
     $request->bindParam(':id', $id, PDO::PARAM_STR);
     $request->execute();
+
+    if ($request->rowCount() > 0) {
+        return ['name' => $name, 'email' => $email];
+    } else {
+        return null; // Retourner null en cas d'échec de la mise à jour
+    }
 }
 function createUser($name, $email) {
     global $pdo;
@@ -41,6 +47,8 @@ function deleteUser($id) {
     $request = $pdo->prepare('DELETE FROM `users` WHERE `id`= :id');
     $request->bindParam(':id', $id, PDO::PARAM_STR);
     $request->execute();
+
+    return $request->rowCount() > 0; // Renvoie true si au moins une ligne a été supprimée, sinon false
 }
 
 function getAllUsers(){
