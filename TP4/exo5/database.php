@@ -27,11 +27,8 @@ function updateUser($name, $email, $id) {
     $request->bindParam(':id', $id, PDO::PARAM_STR);
     $request->execute();
 
-    if ($request->rowCount() > 0) {
-        return ['name' => $name, 'email' => $email];
-    } else {
-        return null; // Retourner null en cas d'échec de la mise à jour
-    }
+    return $request->rowCount() > 0 ? ["name" => $name, "email" => $email] : null; // Renvoie les données mises à jour ou null si aucune ligne mise à jour
+
 }
 function createUser($name, $email) {
     global $pdo;

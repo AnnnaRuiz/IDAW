@@ -40,8 +40,8 @@ switch($_SERVER["REQUEST_METHOD"]){
                 header('Content-Type: application/json');
                 echo json_encode($updatedUser);
             } else {
-                http_response_code(500); // Code d'erreur 500 Internal Server Error
-                echo json_encode(["message" => "Erreur lors de la mise à jour de l'utilisateur"]);
+                http_response_code(404); // Code d'erreur 404 Not Found
+                echo json_encode(["message" => "Utilisateur non trouve"]);
             }
         } else {
             http_response_code(400); // Code d'erreur 400 Bad Request
