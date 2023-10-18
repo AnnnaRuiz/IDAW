@@ -56,14 +56,14 @@ switch($_SERVER["REQUEST_METHOD"]){
             if ($updatedUser !== null) {
                 http_response_code(200); // Code 200 OK
                 header('Content-Type: application/json');
-                echo json_encode($updatedUser);
+                exit(json_encode($updatedUser));
             } else {
                 http_response_code(404); // Code d'erreur 404 Not Found
-                echo json_encode(["message" => "Utilisateur non trouve"]);
+                exit(json_encode(["message" => "Utilisateur non trouve"]));
             }
         } else {
             http_response_code(400); // Code d'erreur 400 Bad Request
-            echo json_encode(["message" => "Parametres invalides pour la mise a jour de l'utilisateur"]);
+            exit(json_encode(["message" => "Parametres invalides pour la mise a jour de l'utilisateur"]));
         }
         break;
 
@@ -77,17 +77,20 @@ switch($_SERVER["REQUEST_METHOD"]){
         
                 if ($deleted) {
                     http_response_code(200); // Code 200 OK
-                    echo json_encode(["message" => "Utilisateur supprime avec succes"]);
+                    exit( json_encode(["message" => "Utilisateur supprime avec succes"]));
                 } else {
                     http_response_code(404); // Code d'erreur 404 Not Found (si l'utilisateur avec cet ID n'existe pas)
-                    echo json_encode(["message" => "Utilisateur non trouve"]);
+                    exit( json_encode(["message" => "Utilisateur non trouve"]));
                 }
             } else {
                 http_response_code(400); // Code d'erreur 400 Bad Request
-                echo json_encode(["message" => "Parametres invalides pour la suppression de l'utilisateur"]);
+                exit( json_encode(["message" => "Parametres invalides pour la suppression de l'utilisateur"]));
             }
             break;
 
+            default: 
+                http_response_code(501);
+                exit(json_encode(["message" => "Not implemented"]));
 }
  // Close the database connection
 $pdo = null;
