@@ -56,4 +56,11 @@ function getAllUsers(){
     return $result;
 }
 
+function read_user($id){
+    global $pdo;
+    $request = $pdo->prepare("SELECT id, name, email FROM users WHERE id=?");
+    $request->execute([$id]);
+    $result = $request->fetchAll(PDO::FETCH_OBJ);
+    return $result;
+}
 ?>

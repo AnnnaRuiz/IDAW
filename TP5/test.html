@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cours JavaScript</title>
+        <meta charset="utf-8">
+        <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no">
+
+    </head>
+    
+    <body>
+        <h1>Titre principal</h1>
+        <button onclick="alert('Bonjour !')">Cliquez moi</button>
+        
+        <button onclick="(function(){
+            let para = document.createElement('p');
+            para.textContent = 'Paragraphe ajouté';
+            para.id = 'nouveauParagraphe';
+            document.body.appendChild(para);
+        })();">
+            Ajouter un paragraphe
+        </button>
+        <button onclick="(function(){
+            let dernierParagraphe = document.getElementById('nouveauParagraphe');
+            if (dernierParagraphe) {
+                dernierParagraphe.remove(); // Supprimer le dernier paragraphe
+            }
+        })();">
+            Supprimer dernier paragraphe
+        </button>
+    </body>
+</html>
