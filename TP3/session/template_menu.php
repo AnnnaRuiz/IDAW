@@ -4,7 +4,7 @@
         // un tableau qui définit la structure du site
         $mymenu = array(
             // idPage titre
-            'connected' => array( 'Home' ),
+            'accueil' => array( 'Home' ),
             'latin' => array( 'Latin' ),
         );
         

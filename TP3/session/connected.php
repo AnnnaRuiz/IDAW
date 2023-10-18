@@ -21,8 +21,8 @@
 
         } else {
              $errorText = "Erreur de login/password";
-             header('Location: index.php');
         } 
+        header('Location: index.php');
     }
     else {
         $errorText = "Merci d'utiliser le formulaire de login";
