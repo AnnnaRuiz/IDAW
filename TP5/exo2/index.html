@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Users</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="users.js"></script>
+</head>
+
+<body>
+    <div class="row-12 text-center mt-3">
+        <h1> Users </h1>
+    </div>
+    
+    <table id="users" class="display row-border hover self-align-center">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <form id="addUserForm" class="m-3">
+        <div class="form-group row">
+            <label for="inputNom" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputNom" name="name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputMail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="inputMail" name="email">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <span class="col-sm-2"></span>
+            <div class="col-sm-2">
+                <button type="submit" class="btn btn-primary form-control" id="submitBtn">Submit</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

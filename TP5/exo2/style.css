@@ -1,0 +1,8 @@
+table {
+    width:80%; 
+    margin-bottom: 100px;
+}
+thead {
+    background-color: grey;
+    color: white;
+}
