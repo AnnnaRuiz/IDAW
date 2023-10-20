@@ -4,8 +4,10 @@ body{ margin-top: 3em; }
 .table {
     margin-bottom: 100px;
 }
-thead{
-    background-color: lightgray;
+table{
     text-align: center;
     border: 1px black;
 } 
+thead{
+    background-color: lightgray;
+}
